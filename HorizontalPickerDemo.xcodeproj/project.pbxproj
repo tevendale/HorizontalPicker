@@ -81,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		174DD43B24C5BB1600C9D9E8 /* HorizontalPickerDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HorizontalPickerDemo.entitlements; sourceTree = "<group>"; };
 		730643031C1DA78900A423A6 /* HorizontalPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		730643061C1DA78900A423A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		730643081C1DA78900A423A6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 		730643051C1DA78900A423A6 /* HorizontalPickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				174DD43B24C5BB1600C9D9E8 /* HorizontalPickerDemo.entitlements */,
 				730643061C1DA78900A423A6 /* AppDelegate.swift */,
 				730643081C1DA78900A423A6 /* FirstViewController.swift */,
 				7306430A1C1DA78900A423A6 /* SecondViewController.swift */,
@@ -377,14 +379,16 @@
 				TargetAttributes = {
 					730643021C1DA78900A423A6 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 4VQVU766P5;
+						DevelopmentTeam = XKDKNPD4RC;
 					};
 					730643181C1DA78900A423A6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XKDKNPD4RC;
 						TestTargetID = 730643021C1DA78900A423A6;
 					};
 					730643231C1DA78900A423A6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XKDKNPD4RC;
 						TestTargetID = 730643021C1DA78900A423A6;
 					};
 					7306433A1C1DA79B00A423A6 = {
@@ -393,6 +397,7 @@
 					};
 					730643431C1DA79B00A423A6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = XKDKNPD4RC;
 						TestTargetID = 730643021C1DA78900A423A6;
 					};
 				};
@@ -402,6 +407,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -666,11 +672,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4VQVU766P5;
+				CODE_SIGN_ENTITLEMENTS = HorizontalPickerDemo/HorizontalPickerDemo.entitlements;
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -679,11 +689,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4VQVU766P5;
+				CODE_SIGN_ENTITLEMENTS = HorizontalPickerDemo/HorizontalPickerDemo.entitlements;
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -691,6 +705,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerDemoTests;
@@ -703,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerDemoTests;
@@ -714,6 +730,7 @@
 		730643341C1DA78900A423A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerDemoUITests;
@@ -726,6 +743,7 @@
 		730643351C1DA78900A423A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerDemoUITests;
@@ -755,6 +773,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -779,6 +798,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -788,6 +808,7 @@
 		730643571C1DA79B00A423A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerTests;
@@ -799,6 +820,7 @@
 		730643581C1DA79B00A423A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XKDKNPD4RC;
 				INFOPLIST_FILE = HorizontalPickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.berndrabe.HorizontalPickerTests;
