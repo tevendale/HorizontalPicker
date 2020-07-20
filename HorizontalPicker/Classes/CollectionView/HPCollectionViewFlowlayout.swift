@@ -7,18 +7,18 @@
 //
 
 import UIKit
-import GLKit
 
 class HPCollectionViewFlowlayout: UICollectionViewFlowLayout {
     
     var activeDistance: CGFloat = 0.0
     var midX: CGFloat = 0
     var lastElementIndex = 0
-    let maxAngle = CGFloat(GLKMathDegreesToRadians(HorizontalPickerViewConstants.maxRotationAngle))
+    var maxAngle:CGFloat = 0.0
     
     override func prepare () {
         minimumInteritemSpacing = 0.0
         scrollDirection = .horizontal
+        maxAngle = CGFloat(degreesToRadians(degrees: Float(-60.0)))
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -49,6 +49,13 @@ class HPCollectionViewFlowlayout: UICollectionViewFlowLayout {
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         return true
+    }
+    
+    func degreesToRadians(degrees: Float) -> CGFloat {
+        let rAngle:Float = degrees * Float.pi/180.0
+        
+        return CGFloat(rAngle)
+
     }
 
 }
